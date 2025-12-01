@@ -1,0 +1,1003 @@
+=====================================
+--- Start Scheduling ---
+=====================================
+
+[0]: Only one ready job: Selecting Job_1
+  >> Schedule: Job_1 | p=62.0, r=0.0
+  >> Start at: 0 | Complete at: 62.0
+  >> Machine Time Updated to: 62.0
+
+[62.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_9', 'Job_10']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_9, Beta=Job_5) ---
+  If scheduling Job_9 first: Loss (τ_Job_5) = 38.0
+  If scheduling Job_5 first: Loss (τ_Job_9) = 44.0
+  **Decision (Min Loss):** Schedule Job_9 first
+  >> Schedule: Job_9 | p=38.0, r=32.0
+  >> Start at: 62.0 | Complete at: 100.0
+  >> Machine Time Updated to: 100.0
+
+[100.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_14', 'Job_15', 'Job_16', 'Job_17', 'Job_18', 'Job_19', 'Job_20', 'Job_21', 'Job_22', 'Job_23']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_14, Beta=Job_15) ---
+  If scheduling Job_14 first: Loss (τ_Job_15) = 2.0
+  If scheduling Job_15 first: Loss (τ_Job_14) = 7.0
+  **Decision (Min Loss):** Schedule Job_14 first
+  >> Schedule: Job_14 | p=2.0, r=73.0
+  >> Start at: 100.0 | Complete at: 102.0
+  >> Machine Time Updated to: 102.0
+
+[102.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_15', 'Job_16', 'Job_17', 'Job_18', 'Job_19', 'Job_20', 'Job_21', 'Job_22', 'Job_23']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_15, Beta=Job_20) ---
+  If scheduling Job_15 first: Loss (τ_Job_20) = 7.0
+  If scheduling Job_20 first: Loss (τ_Job_15) = 15.0
+  **Decision (Min Loss):** Schedule Job_15 first
+  >> Schedule: Job_15 | p=7.0, r=75.0
+  >> Start at: 102.0 | Complete at: 109.0
+  >> Machine Time Updated to: 109.0
+
+[109.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_17', 'Job_18', 'Job_19', 'Job_20', 'Job_21', 'Job_22', 'Job_23', 'Job_24']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_24, Beta=Job_20) ---
+  If scheduling Job_24 first: Loss (τ_Job_20) = 14.0
+  If scheduling Job_20 first: Loss (τ_Job_24) = 15.0
+  **Decision (Min Loss):** Schedule Job_24 first
+  >> Schedule: Job_24 | p=14.0, r=103.0
+  >> Start at: 109.0 | Complete at: 123.0
+  >> Machine Time Updated to: 123.0
+
+[123.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_17', 'Job_18', 'Job_19', 'Job_20', 'Job_21', 'Job_22', 'Job_23']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_20, Beta=Job_17) ---
+  If scheduling Job_20 first: Loss (τ_Job_17) = 15.0
+  If scheduling Job_17 first: Loss (τ_Job_20) = 25.0
+  **Decision (Min Loss):** Schedule Job_20 first
+  >> Schedule: Job_20 | p=15.0, r=85.0
+  >> Start at: 123.0 | Complete at: 138.0
+  >> Machine Time Updated to: 138.0
+
+[138.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_17', 'Job_18', 'Job_19', 'Job_21', 'Job_22', 'Job_23', 'Job_25', 'Job_26', 'Job_27', 'Job_28']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_27, Beta=Job_17) ---
+  If scheduling Job_27 first: Loss (τ_Job_17) = 21.0
+  If scheduling Job_17 first: Loss (τ_Job_27) = 25.0
+  **Decision (Min Loss):** Schedule Job_27 first
+  >> Schedule: Job_27 | p=21.0, r=131.0
+  >> Start at: 138.0 | Complete at: 159.0
+  >> Machine Time Updated to: 159.0
+
+[159.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_17', 'Job_18', 'Job_19', 'Job_21', 'Job_22', 'Job_23', 'Job_25', 'Job_26', 'Job_28', 'Job_29', 'Job_30', 'Job_31', 'Job_32', 'Job_33']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_17, Beta=Job_19) ---
+  If scheduling Job_17 first: Loss (τ_Job_19) = 25.0
+  If scheduling Job_19 first: Loss (τ_Job_17) = 27.0
+  **Decision (Min Loss):** Schedule Job_17 first
+  >> Schedule: Job_17 | p=25.0, r=80.0
+  >> Start at: 159.0 | Complete at: 184.0
+  >> Machine Time Updated to: 184.0
+
+[184.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_18', 'Job_19', 'Job_21', 'Job_22', 'Job_23', 'Job_25', 'Job_26', 'Job_28', 'Job_29', 'Job_30', 'Job_31', 'Job_32', 'Job_33', 'Job_34', 'Job_35', 'Job_36', 'Job_37', 'Job_38', 'Job_39', 'Job_40']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_38, Beta=Job_39) ---
+  If scheduling Job_38 first: Loss (τ_Job_39) = 1.0
+  If scheduling Job_39 first: Loss (τ_Job_38) = 17.0
+  **Decision (Min Loss):** Schedule Job_38 first
+  >> Schedule: Job_38 | p=1.0, r=174.0
+  >> Start at: 184.0 | Complete at: 185.0
+  >> Machine Time Updated to: 185.0
+
+[185.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_18', 'Job_19', 'Job_21', 'Job_22', 'Job_23', 'Job_25', 'Job_26', 'Job_28', 'Job_29', 'Job_30', 'Job_31', 'Job_32', 'Job_33', 'Job_34', 'Job_35', 'Job_36', 'Job_37', 'Job_39', 'Job_40', 'Job_41', 'Job_42']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_39, Beta=Job_36) ---
+  If scheduling Job_39 first: Loss (τ_Job_36) = 17.0
+  If scheduling Job_36 first: Loss (τ_Job_39) = 19.0
+  **Decision (Min Loss):** Schedule Job_39 first
+  >> Schedule: Job_39 | p=17.0, r=175.0
+  >> Start at: 185.0 | Complete at: 202.0
+  >> Machine Time Updated to: 202.0
+
+[202.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_18', 'Job_19', 'Job_21', 'Job_22', 'Job_23', 'Job_25', 'Job_26', 'Job_28', 'Job_29', 'Job_30', 'Job_31', 'Job_32', 'Job_33', 'Job_34', 'Job_35', 'Job_36', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_45', 'Job_46', 'Job_47']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_45, Beta=Job_36) ---
+  If scheduling Job_45 first: Loss (τ_Job_36) = 13.0
+  If scheduling Job_36 first: Loss (τ_Job_45) = 19.0
+  **Decision (Min Loss):** Schedule Job_45 first
+  >> Schedule: Job_45 | p=13.0, r=195.0
+  >> Start at: 202.0 | Complete at: 215.0
+  >> Machine Time Updated to: 215.0
+
+[215.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_18', 'Job_19', 'Job_21', 'Job_22', 'Job_23', 'Job_25', 'Job_26', 'Job_28', 'Job_29', 'Job_30', 'Job_31', 'Job_32', 'Job_33', 'Job_34', 'Job_35', 'Job_36', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_46', 'Job_47', 'Job_48']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_36, Beta=Job_34) ---
+  If scheduling Job_36 first: Loss (τ_Job_34) = 19.0
+  If scheduling Job_34 first: Loss (τ_Job_36) = 24.0
+  **Decision (Min Loss):** Schedule Job_36 first
+  >> Schedule: Job_36 | p=19.0, r=171.0
+  >> Start at: 215.0 | Complete at: 234.0
+  >> Machine Time Updated to: 234.0
+
+[234.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_18', 'Job_19', 'Job_21', 'Job_22', 'Job_23', 'Job_25', 'Job_26', 'Job_28', 'Job_29', 'Job_30', 'Job_31', 'Job_32', 'Job_33', 'Job_34', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_46', 'Job_47', 'Job_48', 'Job_49', 'Job_50', 'Job_51', 'Job_52', 'Job_53']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_50, Beta=Job_34) ---
+  If scheduling Job_50 first: Loss (τ_Job_34) = 6.0
+  If scheduling Job_34 first: Loss (τ_Job_50) = 24.0
+  **Decision (Min Loss):** Schedule Job_50 first
+  >> Schedule: Job_50 | p=6.0, r=219.0
+  >> Start at: 234.0 | Complete at: 240.0
+  >> Machine Time Updated to: 240.0
+
+[240.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_18', 'Job_19', 'Job_21', 'Job_22', 'Job_23', 'Job_25', 'Job_26', 'Job_28', 'Job_29', 'Job_30', 'Job_31', 'Job_32', 'Job_33', 'Job_34', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_46', 'Job_47', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_53']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_34, Beta=Job_19) ---
+  If scheduling Job_34 first: Loss (τ_Job_19) = 24.0
+  If scheduling Job_19 first: Loss (τ_Job_34) = 27.0
+  **Decision (Min Loss):** Schedule Job_34 first
+  >> Schedule: Job_34 | p=24.0, r=162.0
+  >> Start at: 240.0 | Complete at: 264.0
+  >> Machine Time Updated to: 264.0
+
+[264.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_18', 'Job_19', 'Job_21', 'Job_22', 'Job_23', 'Job_25', 'Job_26', 'Job_28', 'Job_29', 'Job_30', 'Job_31', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_46', 'Job_47', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_53', 'Job_54', 'Job_55', 'Job_56', 'Job_57', 'Job_58']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_19, Beta=Job_57) ---
+  If scheduling Job_19 first: Loss (τ_Job_57) = 27.0
+  If scheduling Job_57 first: Loss (τ_Job_19) = 29.0
+  **Decision (Min Loss):** Schedule Job_19 first
+  >> Schedule: Job_19 | p=27.0, r=83.0
+  >> Start at: 264.0 | Complete at: 291.0
+  >> Machine Time Updated to: 291.0
+
+[291.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_25', 'Job_26', 'Job_28', 'Job_29', 'Job_30', 'Job_31', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_46', 'Job_47', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_53', 'Job_54', 'Job_55', 'Job_56', 'Job_57', 'Job_58', 'Job_59', 'Job_60', 'Job_61', 'Job_62']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_57, Beta=Job_46) ---
+  If scheduling Job_57 first: Loss (τ_Job_46) = 29.0
+  If scheduling Job_46 first: Loss (τ_Job_57) = 32.0
+  **Decision (Min Loss):** Schedule Job_57 first
+  >> Schedule: Job_57 | p=29.0, r=260.0
+  >> Start at: 291.0 | Complete at: 320.0
+  >> Machine Time Updated to: 320.0
+
+[320.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_25', 'Job_26', 'Job_28', 'Job_29', 'Job_30', 'Job_31', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_46', 'Job_47', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_53', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_61', 'Job_62', 'Job_63', 'Job_64', 'Job_65', 'Job_66', 'Job_67', 'Job_68']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_64, Beta=Job_63) ---
+  If scheduling Job_64 first: Loss (τ_Job_63) = 20.0
+  If scheduling Job_63 first: Loss (τ_Job_64) = 22.0
+  **Decision (Min Loss):** Schedule Job_64 first
+  >> Schedule: Job_64 | p=20.0, r=298.0
+  >> Start at: 320.0 | Complete at: 340.0
+  >> Machine Time Updated to: 340.0
+
+[340.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_25', 'Job_26', 'Job_28', 'Job_29', 'Job_30', 'Job_31', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_46', 'Job_47', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_53', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_61', 'Job_62', 'Job_63', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_70']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_63, Beta=Job_46) ---
+  If scheduling Job_63 first: Loss (τ_Job_46) = 22.0
+  If scheduling Job_46 first: Loss (τ_Job_63) = 32.0
+  **Decision (Min Loss):** Schedule Job_63 first
+  >> Schedule: Job_63 | p=22.0, r=293.0
+  >> Start at: 340.0 | Complete at: 362.0
+  >> Machine Time Updated to: 362.0
+
+[362.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_25', 'Job_26', 'Job_28', 'Job_29', 'Job_30', 'Job_31', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_46', 'Job_47', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_53', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_61', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_70', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_75', 'Job_76', 'Job_77']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_75, Beta=Job_46) ---
+  If scheduling Job_75 first: Loss (τ_Job_46) = 1.0
+  If scheduling Job_46 first: Loss (τ_Job_75) = 32.0
+  **Decision (Min Loss):** Schedule Job_75 first
+  >> Schedule: Job_75 | p=1.0, r=361.0
+  >> Start at: 362.0 | Complete at: 363.0
+  >> Machine Time Updated to: 363.0
+
+[363.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_25', 'Job_26', 'Job_28', 'Job_29', 'Job_30', 'Job_31', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_46', 'Job_47', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_53', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_61', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_70', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_46, Beta=Job_53) ---
+  If scheduling Job_46 first: Loss (τ_Job_53) = 32.0
+  If scheduling Job_53 first: Loss (τ_Job_46) = 33.0
+  **Decision (Min Loss):** Schedule Job_46 first
+  >> Schedule: Job_46 | p=32.0, r=196.0
+  >> Start at: 363.0 | Complete at: 395.0
+  >> Machine Time Updated to: 395.0
+
+[395.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_25', 'Job_26', 'Job_28', 'Job_29', 'Job_30', 'Job_31', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_47', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_53', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_61', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_70', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_78', 'Job_79', 'Job_80', 'Job_81', 'Job_82', 'Job_83', 'Job_84', 'Job_85', 'Job_86', 'Job_87']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_80, Beta=Job_85) ---
+  If scheduling Job_80 first: Loss (τ_Job_85) = 1.0
+  If scheduling Job_85 first: Loss (τ_Job_80) = 30.0
+  **Decision (Min Loss):** Schedule Job_80 first
+  >> Schedule: Job_80 | p=1.0, r=368.0
+  >> Start at: 395.0 | Complete at: 396.0
+  >> Machine Time Updated to: 396.0
+
+[396.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_25', 'Job_26', 'Job_28', 'Job_29', 'Job_30', 'Job_31', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_47', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_53', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_61', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_70', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_78', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_84', 'Job_85', 'Job_86', 'Job_87']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_85, Beta=Job_53) ---
+  If scheduling Job_85 first: Loss (τ_Job_53) = 30.0
+  If scheduling Job_53 first: Loss (τ_Job_85) = 33.0
+  **Decision (Min Loss):** Schedule Job_85 first
+  >> Schedule: Job_85 | p=30.0, r=390.0
+  >> Start at: 396.0 | Complete at: 426.0
+  >> Machine Time Updated to: 426.0
+
+[426.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_25', 'Job_26', 'Job_28', 'Job_29', 'Job_30', 'Job_31', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_47', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_53', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_61', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_70', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_78', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_84', 'Job_86', 'Job_87', 'Job_88', 'Job_89', 'Job_90', 'Job_91', 'Job_92', 'Job_93']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_93, Beta=Job_53) ---
+  If scheduling Job_93 first: Loss (τ_Job_53) = 32.0
+  If scheduling Job_53 first: Loss (τ_Job_93) = 33.0
+  **Decision (Min Loss):** Schedule Job_93 first
+  >> Schedule: Job_93 | p=32.0, r=425.0
+  >> Start at: 426.0 | Complete at: 458.0
+  >> Machine Time Updated to: 458.0
+
+[458.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_25', 'Job_26', 'Job_28', 'Job_29', 'Job_30', 'Job_31', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_47', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_53', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_61', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_70', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_78', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_84', 'Job_86', 'Job_87', 'Job_88', 'Job_89', 'Job_90', 'Job_91', 'Job_92', 'Job_94', 'Job_95', 'Job_96', 'Job_97', 'Job_98']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_96, Beta=Job_53) ---
+  If scheduling Job_96 first: Loss (τ_Job_53) = 13.0
+  If scheduling Job_53 first: Loss (τ_Job_96) = 33.0
+  **Decision (Min Loss):** Schedule Job_96 first
+  >> Schedule: Job_96 | p=13.0, r=431.0
+  >> Start at: 458.0 | Complete at: 471.0
+  >> Machine Time Updated to: 471.0
+
+[471.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_25', 'Job_26', 'Job_28', 'Job_29', 'Job_30', 'Job_31', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_47', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_53', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_61', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_70', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_78', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_84', 'Job_86', 'Job_87', 'Job_88', 'Job_89', 'Job_90', 'Job_91', 'Job_92', 'Job_94', 'Job_95', 'Job_97', 'Job_98', 'Job_99', 'Job_100']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_53, Beta=Job_70) ---
+  If scheduling Job_53 first: Loss (τ_Job_70) = 33.0
+  If scheduling Job_70 first: Loss (τ_Job_53) = 34.0
+  **Decision (Min Loss):** Schedule Job_53 first
+  >> Schedule: Job_53 | p=33.0, r=234.0
+  >> Start at: 471.0 | Complete at: 504.0
+  >> Machine Time Updated to: 504.0
+
+[504.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_25', 'Job_26', 'Job_28', 'Job_29', 'Job_30', 'Job_31', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_47', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_61', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_70', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_78', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_84', 'Job_86', 'Job_87', 'Job_88', 'Job_89', 'Job_90', 'Job_91', 'Job_92', 'Job_94', 'Job_95', 'Job_97', 'Job_98', 'Job_99', 'Job_100']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_70, Beta=Job_29) ---
+  If scheduling Job_70 first: Loss (τ_Job_29) = 34.0
+  If scheduling Job_29 first: Loss (τ_Job_70) = 35.0
+  **Decision (Min Loss):** Schedule Job_70 first
+  >> Schedule: Job_70 | p=34.0, r=338.0
+  >> Start at: 504.0 | Complete at: 538.0
+  >> Machine Time Updated to: 538.0
+
+[538.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_25', 'Job_26', 'Job_28', 'Job_29', 'Job_30', 'Job_31', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_47', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_61', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_78', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_84', 'Job_86', 'Job_87', 'Job_88', 'Job_89', 'Job_90', 'Job_91', 'Job_92', 'Job_94', 'Job_95', 'Job_97', 'Job_98', 'Job_99', 'Job_100']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_29, Beta=Job_31) ---
+  If scheduling Job_29 first: Loss (τ_Job_31) = 35.0
+  If scheduling Job_31 first: Loss (τ_Job_29) = 35.0
+  **Decision (Min Loss):** Schedule Job_29 first
+  >> Schedule: Job_29 | p=35.0, r=139.0
+  >> Start at: 538.0 | Complete at: 573.0
+  >> Machine Time Updated to: 573.0
+
+[573.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_25', 'Job_26', 'Job_28', 'Job_30', 'Job_31', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_47', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_61', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_78', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_84', 'Job_86', 'Job_87', 'Job_88', 'Job_89', 'Job_90', 'Job_91', 'Job_92', 'Job_94', 'Job_95', 'Job_97', 'Job_98', 'Job_99', 'Job_100']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_31, Beta=Job_16) ---
+  If scheduling Job_31 first: Loss (τ_Job_16) = 35.0
+  If scheduling Job_16 first: Loss (τ_Job_31) = 36.0
+  **Decision (Min Loss):** Schedule Job_31 first
+  >> Schedule: Job_31 | p=35.0, r=148.0
+  >> Start at: 573.0 | Complete at: 608.0
+  >> Machine Time Updated to: 608.0
+
+[608.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_16', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_25', 'Job_26', 'Job_28', 'Job_30', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_47', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_61', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_78', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_84', 'Job_86', 'Job_87', 'Job_88', 'Job_89', 'Job_90', 'Job_91', 'Job_92', 'Job_94', 'Job_95', 'Job_97', 'Job_98', 'Job_99', 'Job_100']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_16, Beta=Job_25) ---
+  If scheduling Job_16 first: Loss (τ_Job_25) = 36.0
+  If scheduling Job_25 first: Loss (τ_Job_16) = 36.0
+  **Decision (Min Loss):** Schedule Job_16 first
+  >> Schedule: Job_16 | p=36.0, r=75.0
+  >> Start at: 608.0 | Complete at: 644.0
+  >> Machine Time Updated to: 644.0
+
+[644.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_25', 'Job_26', 'Job_28', 'Job_30', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_47', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_61', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_78', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_84', 'Job_86', 'Job_87', 'Job_88', 'Job_89', 'Job_90', 'Job_91', 'Job_92', 'Job_94', 'Job_95', 'Job_97', 'Job_98', 'Job_99', 'Job_100']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_25, Beta=Job_84) ---
+  If scheduling Job_25 first: Loss (τ_Job_84) = 36.0
+  If scheduling Job_84 first: Loss (τ_Job_25) = 37.0
+  **Decision (Min Loss):** Schedule Job_25 first
+  >> Schedule: Job_25 | p=36.0, r=124.0
+  >> Start at: 644.0 | Complete at: 680.0
+  >> Machine Time Updated to: 680.0
+
+[680.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_26', 'Job_28', 'Job_30', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_47', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_61', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_78', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_84', 'Job_86', 'Job_87', 'Job_88', 'Job_89', 'Job_90', 'Job_91', 'Job_92', 'Job_94', 'Job_95', 'Job_97', 'Job_98', 'Job_99', 'Job_100']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_84, Beta=Job_86) ---
+  If scheduling Job_84 first: Loss (τ_Job_86) = 37.0
+  If scheduling Job_86 first: Loss (τ_Job_84) = 37.0
+  **Decision (Min Loss):** Schedule Job_84 first
+  >> Schedule: Job_84 | p=37.0, r=384.0
+  >> Start at: 680.0 | Complete at: 717.0
+  >> Machine Time Updated to: 717.0
+
+[717.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_26', 'Job_28', 'Job_30', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_47', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_61', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_78', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_86', 'Job_87', 'Job_88', 'Job_89', 'Job_90', 'Job_91', 'Job_92', 'Job_94', 'Job_95', 'Job_97', 'Job_98', 'Job_99', 'Job_100']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_86, Beta=Job_89) ---
+  If scheduling Job_86 first: Loss (τ_Job_89) = 37.0
+  If scheduling Job_89 first: Loss (τ_Job_86) = 37.0
+  **Decision (Min Loss):** Schedule Job_86 first
+  >> Schedule: Job_86 | p=37.0, r=392.0
+  >> Start at: 717.0 | Complete at: 754.0
+  >> Machine Time Updated to: 754.0
+
+[754.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_26', 'Job_28', 'Job_30', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_47', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_61', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_78', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_89', 'Job_90', 'Job_91', 'Job_92', 'Job_94', 'Job_95', 'Job_97', 'Job_98', 'Job_99', 'Job_100']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_89, Beta=Job_11) ---
+  If scheduling Job_89 first: Loss (τ_Job_11) = 37.0
+  If scheduling Job_11 first: Loss (τ_Job_89) = 38.0
+  **Decision (Min Loss):** Schedule Job_89 first
+  >> Schedule: Job_89 | p=37.0, r=406.0
+  >> Start at: 754.0 | Complete at: 791.0
+  >> Machine Time Updated to: 791.0
+
+[791.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_11', 'Job_12', 'Job_13', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_26', 'Job_28', 'Job_30', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_47', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_61', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_78', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_94', 'Job_95', 'Job_97', 'Job_98', 'Job_99', 'Job_100']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_11, Beta=Job_12) ---
+  If scheduling Job_11 first: Loss (τ_Job_12) = 38.0
+  If scheduling Job_12 first: Loss (τ_Job_11) = 38.0
+  **Decision (Min Loss):** Schedule Job_11 first
+  >> Schedule: Job_11 | p=38.0, r=66.0
+  >> Start at: 791.0 | Complete at: 829.0
+  >> Machine Time Updated to: 829.0
+
+[829.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_12', 'Job_13', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_26', 'Job_28', 'Job_30', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_47', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_61', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_78', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_94', 'Job_95', 'Job_97', 'Job_98', 'Job_99', 'Job_100']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_12, Beta=Job_47) ---
+  If scheduling Job_12 first: Loss (τ_Job_47) = 38.0
+  If scheduling Job_47 first: Loss (τ_Job_12) = 38.0
+  **Decision (Min Loss):** Schedule Job_12 first
+  >> Schedule: Job_12 | p=38.0, r=68.0
+  >> Start at: 829.0 | Complete at: 867.0
+  >> Machine Time Updated to: 867.0
+
+[867.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_26', 'Job_28', 'Job_30', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_47', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_61', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_78', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_94', 'Job_95', 'Job_97', 'Job_98', 'Job_99', 'Job_100']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_47, Beta=Job_61) ---
+  If scheduling Job_47 first: Loss (τ_Job_61) = 38.0
+  If scheduling Job_61 first: Loss (τ_Job_47) = 38.0
+  **Decision (Min Loss):** Schedule Job_47 first
+  >> Schedule: Job_47 | p=38.0, r=202.0
+  >> Start at: 867.0 | Complete at: 905.0
+  >> Machine Time Updated to: 905.0
+
+[905.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_26', 'Job_28', 'Job_30', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_61', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_78', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_94', 'Job_95', 'Job_97', 'Job_98', 'Job_99', 'Job_100']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_61, Beta=Job_52) ---
+  If scheduling Job_61 first: Loss (τ_Job_52) = 38.0
+  If scheduling Job_52 first: Loss (τ_Job_61) = 40.0
+  **Decision (Min Loss):** Schedule Job_61 first
+  >> Schedule: Job_61 | p=38.0, r=270.0
+  >> Start at: 905.0 | Complete at: 943.0
+  >> Machine Time Updated to: 943.0
+
+[943.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_26', 'Job_28', 'Job_30', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_48', 'Job_49', 'Job_51', 'Job_52', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_78', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_94', 'Job_95', 'Job_97', 'Job_98', 'Job_99', 'Job_100']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_52, Beta=Job_95) ---
+  If scheduling Job_52 first: Loss (τ_Job_95) = 40.0
+  If scheduling Job_95 first: Loss (τ_Job_52) = 40.0
+  **Decision (Min Loss):** Schedule Job_52 first
+  >> Schedule: Job_52 | p=40.0, r=221.0
+  >> Start at: 943.0 | Complete at: 983.0
+  >> Machine Time Updated to: 983.0
+
+[983.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_26', 'Job_28', 'Job_30', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_78', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_94', 'Job_95', 'Job_97', 'Job_98', 'Job_99', 'Job_100']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_95, Beta=Job_44) ---
+  If scheduling Job_95 first: Loss (τ_Job_44) = 40.0
+  If scheduling Job_44 first: Loss (τ_Job_95) = 42.0
+  **Decision (Min Loss):** Schedule Job_95 first
+  >> Schedule: Job_95 | p=40.0, r=429.0
+  >> Start at: 983.0 | Complete at: 1023.0
+  >> Machine Time Updated to: 1023.0
+
+[1023.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_26', 'Job_28', 'Job_30', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_44', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_78', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_94', 'Job_97', 'Job_98', 'Job_99', 'Job_100']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_44, Beta=Job_58) ---
+  If scheduling Job_44 first: Loss (τ_Job_58) = 42.0
+  If scheduling Job_58 first: Loss (τ_Job_44) = 42.0
+  **Decision (Min Loss):** Schedule Job_44 first
+  >> Schedule: Job_44 | p=42.0, r=190.0
+  >> Start at: 1023.0 | Complete at: 1065.0
+  >> Machine Time Updated to: 1065.0
+
+[1065.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_26', 'Job_28', 'Job_30', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_58', 'Job_59', 'Job_60', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_78', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_94', 'Job_97', 'Job_98', 'Job_99', 'Job_100']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_58, Beta=Job_94) ---
+  If scheduling Job_58 first: Loss (τ_Job_94) = 42.0
+  If scheduling Job_94 first: Loss (τ_Job_58) = 42.0
+  **Decision (Min Loss):** Schedule Job_58 first
+  >> Schedule: Job_58 | p=42.0, r=264.0
+  >> Start at: 1065.0 | Complete at: 1107.0
+  >> Machine Time Updated to: 1107.0
+
+[1107.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_26', 'Job_28', 'Job_30', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_78', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_94', 'Job_97', 'Job_98', 'Job_99', 'Job_100']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_94, Beta=Job_30) ---
+  If scheduling Job_94 first: Loss (τ_Job_30) = 42.0
+  If scheduling Job_30 first: Loss (τ_Job_94) = 43.0
+  **Decision (Min Loss):** Schedule Job_94 first
+  >> Schedule: Job_94 | p=42.0, r=428.0
+  >> Start at: 1107.0 | Complete at: 1149.0
+  >> Machine Time Updated to: 1149.0
+
+[1149.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_26', 'Job_28', 'Job_30', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_78', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_97', 'Job_98', 'Job_99', 'Job_100']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_30, Beta=Job_78) ---
+  If scheduling Job_30 first: Loss (τ_Job_78) = 43.0
+  If scheduling Job_78 first: Loss (τ_Job_30) = 43.0
+  **Decision (Min Loss):** Schedule Job_30 first
+  >> Schedule: Job_30 | p=43.0, r=146.0
+  >> Start at: 1149.0 | Complete at: 1192.0
+  >> Machine Time Updated to: 1192.0
+
+[1192.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_26', 'Job_28', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_78', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_97', 'Job_98', 'Job_99', 'Job_100']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_78, Beta=Job_5) ---
+  If scheduling Job_78 first: Loss (τ_Job_5) = 43.0
+  If scheduling Job_5 first: Loss (τ_Job_78) = 44.0
+  **Decision (Min Loss):** Schedule Job_78 first
+  >> Schedule: Job_78 | p=43.0, r=367.0
+  >> Start at: 1192.0 | Complete at: 1235.0
+  >> Machine Time Updated to: 1235.0
+
+[1235.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_5', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_26', 'Job_28', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_97', 'Job_98', 'Job_99', 'Job_100']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_5, Beta=Job_6) ---
+  If scheduling Job_5 first: Loss (τ_Job_6) = 44.0
+  If scheduling Job_6 first: Loss (τ_Job_5) = 44.0
+  **Decision (Min Loss):** Schedule Job_5 first
+  >> Schedule: Job_5 | p=44.0, r=18.0
+  >> Start at: 1235.0 | Complete at: 1279.0
+  >> Machine Time Updated to: 1279.0
+
+[1279.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_6', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_26', 'Job_28', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_97', 'Job_98', 'Job_99', 'Job_100']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_6, Beta=Job_22) ---
+  If scheduling Job_6 first: Loss (τ_Job_22) = 44.0
+  If scheduling Job_22 first: Loss (τ_Job_6) = 44.0
+  **Decision (Min Loss):** Schedule Job_6 first
+  >> Schedule: Job_6 | p=44.0, r=20.0
+  >> Start at: 1279.0 | Complete at: 1323.0
+  >> Machine Time Updated to: 1323.0
+
+[1323.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_22', 'Job_23', 'Job_26', 'Job_28', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_97', 'Job_98', 'Job_99', 'Job_100']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_22, Beta=Job_100) ---
+  If scheduling Job_22 first: Loss (τ_Job_100) = 44.0
+  If scheduling Job_100 first: Loss (τ_Job_22) = 44.0
+  **Decision (Min Loss):** Schedule Job_22 first
+  >> Schedule: Job_22 | p=44.0, r=98.0
+  >> Start at: 1323.0 | Complete at: 1367.0
+  >> Machine Time Updated to: 1367.0
+
+[1367.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_23', 'Job_26', 'Job_28', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_97', 'Job_98', 'Job_99', 'Job_100']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_100, Beta=Job_62) ---
+  If scheduling Job_100 first: Loss (τ_Job_62) = 44.0
+  If scheduling Job_62 first: Loss (τ_Job_100) = 45.0
+  **Decision (Min Loss):** Schedule Job_100 first
+  >> Schedule: Job_100 | p=44.0, r=467.0
+  >> Start at: 1367.0 | Complete at: 1411.0
+  >> Machine Time Updated to: 1411.0
+
+[1411.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_23', 'Job_26', 'Job_28', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_62', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_97', 'Job_98', 'Job_99']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_62, Beta=Job_81) ---
+  If scheduling Job_62 first: Loss (τ_Job_81) = 45.0
+  If scheduling Job_81 first: Loss (τ_Job_62) = 45.0
+  **Decision (Min Loss):** Schedule Job_62 first
+  >> Schedule: Job_62 | p=45.0, r=281.0
+  >> Start at: 1411.0 | Complete at: 1456.0
+  >> Machine Time Updated to: 1456.0
+
+[1456.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_23', 'Job_26', 'Job_28', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_79', 'Job_81', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_97', 'Job_98', 'Job_99']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_81, Beta=Job_2) ---
+  If scheduling Job_81 first: Loss (τ_Job_2) = 45.0
+  If scheduling Job_2 first: Loss (τ_Job_81) = 47.0
+  **Decision (Min Loss):** Schedule Job_81 first
+  >> Schedule: Job_81 | p=45.0, r=372.0
+  >> Start at: 1456.0 | Complete at: 1501.0
+  >> Machine Time Updated to: 1501.0
+
+[1501.0]: Multiple ready jobs: ['Job_2', 'Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_23', 'Job_26', 'Job_28', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_79', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_97', 'Job_98', 'Job_99']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_2, Beta=Job_43) ---
+  If scheduling Job_2 first: Loss (τ_Job_43) = 47.0
+  If scheduling Job_43 first: Loss (τ_Job_2) = 47.0
+  **Decision (Min Loss):** Schedule Job_2 first
+  >> Schedule: Job_2 | p=47.0, r=1.0
+  >> Start at: 1501.0 | Complete at: 1548.0
+  >> Machine Time Updated to: 1548.0
+
+[1548.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_23', 'Job_26', 'Job_28', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_43', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_79', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_97', 'Job_98', 'Job_99']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_43, Beta=Job_67) ---
+  If scheduling Job_43 first: Loss (τ_Job_67) = 47.0
+  If scheduling Job_67 first: Loss (τ_Job_43) = 48.0
+  **Decision (Min Loss):** Schedule Job_43 first
+  >> Schedule: Job_43 | p=47.0, r=188.0
+  >> Start at: 1548.0 | Complete at: 1595.0
+  >> Machine Time Updated to: 1595.0
+
+[1595.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_23', 'Job_26', 'Job_28', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_65', 'Job_66', 'Job_67', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_79', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_97', 'Job_98', 'Job_99']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_67, Beta=Job_73) ---
+  If scheduling Job_67 first: Loss (τ_Job_73) = 48.0
+  If scheduling Job_73 first: Loss (τ_Job_67) = 49.0
+  **Decision (Min Loss):** Schedule Job_67 first
+  >> Schedule: Job_67 | p=48.0, r=308.0
+  >> Start at: 1595.0 | Complete at: 1643.0
+  >> Machine Time Updated to: 1643.0
+
+[1643.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_23', 'Job_26', 'Job_28', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_73', 'Job_74', 'Job_76', 'Job_77', 'Job_79', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_97', 'Job_98', 'Job_99']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_73, Beta=Job_33) ---
+  If scheduling Job_73 first: Loss (τ_Job_33) = 49.0
+  If scheduling Job_33 first: Loss (τ_Job_73) = 50.0
+  **Decision (Min Loss):** Schedule Job_73 first
+  >> Schedule: Job_73 | p=49.0, r=345.0
+  >> Start at: 1643.0 | Complete at: 1692.0
+  >> Machine Time Updated to: 1692.0
+
+[1692.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_23', 'Job_26', 'Job_28', 'Job_32', 'Job_33', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_74', 'Job_76', 'Job_77', 'Job_79', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_97', 'Job_98', 'Job_99']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_33, Beta=Job_99) ---
+  If scheduling Job_33 first: Loss (τ_Job_99) = 50.0
+  If scheduling Job_99 first: Loss (τ_Job_33) = 50.0
+  **Decision (Min Loss):** Schedule Job_33 first
+  >> Schedule: Job_33 | p=50.0, r=158.0
+  >> Start at: 1692.0 | Complete at: 1742.0
+  >> Machine Time Updated to: 1742.0
+
+[1742.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_23', 'Job_26', 'Job_28', 'Job_32', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_74', 'Job_76', 'Job_77', 'Job_79', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_97', 'Job_98', 'Job_99']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_99, Beta=Job_23) ---
+  If scheduling Job_99 first: Loss (τ_Job_23) = 50.0
+  If scheduling Job_23 first: Loss (τ_Job_99) = 52.0
+  **Decision (Min Loss):** Schedule Job_99 first
+  >> Schedule: Job_99 | p=50.0, r=462.0
+  >> Start at: 1742.0 | Complete at: 1792.0
+  >> Machine Time Updated to: 1792.0
+
+[1792.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_23', 'Job_26', 'Job_28', 'Job_32', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_74', 'Job_76', 'Job_77', 'Job_79', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_97', 'Job_98']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_23, Beta=Job_77) ---
+  If scheduling Job_23 first: Loss (τ_Job_77) = 52.0
+  If scheduling Job_77 first: Loss (τ_Job_23) = 52.0
+  **Decision (Min Loss):** Schedule Job_23 first
+  >> Schedule: Job_23 | p=52.0, r=99.0
+  >> Start at: 1792.0 | Complete at: 1844.0
+  >> Machine Time Updated to: 1844.0
+
+[1844.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_26', 'Job_28', 'Job_32', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_74', 'Job_76', 'Job_77', 'Job_79', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_97', 'Job_98']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_77, Beta=Job_79) ---
+  If scheduling Job_77 first: Loss (τ_Job_79) = 52.0
+  If scheduling Job_79 first: Loss (τ_Job_77) = 52.0
+  **Decision (Min Loss):** Schedule Job_77 first
+  >> Schedule: Job_77 | p=52.0, r=361.0
+  >> Start at: 1844.0 | Complete at: 1896.0
+  >> Machine Time Updated to: 1896.0
+
+[1896.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_26', 'Job_28', 'Job_32', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_74', 'Job_76', 'Job_79', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_97', 'Job_98']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_79, Beta=Job_91) ---
+  If scheduling Job_79 first: Loss (τ_Job_91) = 52.0
+  If scheduling Job_91 first: Loss (τ_Job_79) = 52.0
+  **Decision (Min Loss):** Schedule Job_79 first
+  >> Schedule: Job_79 | p=52.0, r=367.0
+  >> Start at: 1896.0 | Complete at: 1948.0
+  >> Machine Time Updated to: 1948.0
+
+[1948.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_26', 'Job_28', 'Job_32', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_74', 'Job_76', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_91', 'Job_92', 'Job_97', 'Job_98']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_91, Beta=Job_26) ---
+  If scheduling Job_91 first: Loss (τ_Job_26) = 52.0
+  If scheduling Job_26 first: Loss (τ_Job_91) = 53.0
+  **Decision (Min Loss):** Schedule Job_91 first
+  >> Schedule: Job_91 | p=52.0, r=421.0
+  >> Start at: 1948.0 | Complete at: 2000.0
+  >> Machine Time Updated to: 2000.0
+
+[2000.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_26', 'Job_28', 'Job_32', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_74', 'Job_76', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_92', 'Job_97', 'Job_98']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_26, Beta=Job_42) ---
+  If scheduling Job_26 first: Loss (τ_Job_42) = 53.0
+  If scheduling Job_42 first: Loss (τ_Job_26) = 54.0
+  **Decision (Min Loss):** Schedule Job_26 first
+  >> Schedule: Job_26 | p=53.0, r=125.0
+  >> Start at: 2000.0 | Complete at: 2053.0
+  >> Machine Time Updated to: 2053.0
+
+[2053.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_28', 'Job_32', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_42', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_74', 'Job_76', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_92', 'Job_97', 'Job_98']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_42, Beta=Job_37) ---
+  If scheduling Job_42 first: Loss (τ_Job_37) = 54.0
+  If scheduling Job_37 first: Loss (τ_Job_42) = 55.0
+  **Decision (Min Loss):** Schedule Job_42 first
+  >> Schedule: Job_42 | p=54.0, r=185.0
+  >> Start at: 2053.0 | Complete at: 2107.0
+  >> Machine Time Updated to: 2107.0
+
+[2107.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_28', 'Job_32', 'Job_35', 'Job_37', 'Job_40', 'Job_41', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_74', 'Job_76', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_92', 'Job_97', 'Job_98']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_37, Beta=Job_40) ---
+  If scheduling Job_37 first: Loss (τ_Job_40) = 55.0
+  If scheduling Job_40 first: Loss (τ_Job_37) = 55.0
+  **Decision (Min Loss):** Schedule Job_37 first
+  >> Schedule: Job_37 | p=55.0, r=173.0
+  >> Start at: 2107.0 | Complete at: 2162.0
+  >> Machine Time Updated to: 2162.0
+
+[2162.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_28', 'Job_32', 'Job_35', 'Job_40', 'Job_41', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_74', 'Job_76', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_92', 'Job_97', 'Job_98']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_40, Beta=Job_13) ---
+  If scheduling Job_40 first: Loss (τ_Job_13) = 55.0
+  If scheduling Job_13 first: Loss (τ_Job_40) = 56.0
+  **Decision (Min Loss):** Schedule Job_40 first
+  >> Schedule: Job_40 | p=55.0, r=179.0
+  >> Start at: 2162.0 | Complete at: 2217.0
+  >> Machine Time Updated to: 2217.0
+
+[2217.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_13', 'Job_18', 'Job_21', 'Job_28', 'Job_32', 'Job_35', 'Job_41', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_74', 'Job_76', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_92', 'Job_97', 'Job_98']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_13, Beta=Job_97) ---
+  If scheduling Job_13 first: Loss (τ_Job_97) = 56.0
+  If scheduling Job_97 first: Loss (τ_Job_13) = 57.0
+  **Decision (Min Loss):** Schedule Job_13 first
+  >> Schedule: Job_13 | p=56.0, r=71.0
+  >> Start at: 2217.0 | Complete at: 2273.0
+  >> Machine Time Updated to: 2273.0
+
+[2273.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_18', 'Job_21', 'Job_28', 'Job_32', 'Job_35', 'Job_41', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_74', 'Job_76', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_92', 'Job_97', 'Job_98']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_97, Beta=Job_98) ---
+  If scheduling Job_97 first: Loss (τ_Job_98) = 57.0
+  If scheduling Job_98 first: Loss (τ_Job_97) = 57.0
+  **Decision (Min Loss):** Schedule Job_97 first
+  >> Schedule: Job_97 | p=57.0, r=449.0
+  >> Start at: 2273.0 | Complete at: 2330.0
+  >> Machine Time Updated to: 2330.0
+
+[2330.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_18', 'Job_21', 'Job_28', 'Job_32', 'Job_35', 'Job_41', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_74', 'Job_76', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_92', 'Job_98']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_98, Beta=Job_18) ---
+  If scheduling Job_98 first: Loss (τ_Job_18) = 57.0
+  If scheduling Job_18 first: Loss (τ_Job_98) = 58.0
+  **Decision (Min Loss):** Schedule Job_98 first
+  >> Schedule: Job_98 | p=57.0, r=451.0
+  >> Start at: 2330.0 | Complete at: 2387.0
+  >> Machine Time Updated to: 2387.0
+
+[2387.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_18', 'Job_21', 'Job_28', 'Job_32', 'Job_35', 'Job_41', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_74', 'Job_76', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_92']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_18, Beta=Job_51) ---
+  If scheduling Job_18 first: Loss (τ_Job_51) = 58.0
+  If scheduling Job_51 first: Loss (τ_Job_18) = 58.0
+  **Decision (Min Loss):** Schedule Job_18 first
+  >> Schedule: Job_18 | p=58.0, r=83.0
+  >> Start at: 2387.0 | Complete at: 2445.0
+  >> Machine Time Updated to: 2445.0
+
+[2445.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_21', 'Job_28', 'Job_32', 'Job_35', 'Job_41', 'Job_48', 'Job_49', 'Job_51', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_74', 'Job_76', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_92']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_51, Beta=Job_59) ---
+  If scheduling Job_51 first: Loss (τ_Job_59) = 58.0
+  If scheduling Job_59 first: Loss (τ_Job_51) = 58.0
+  **Decision (Min Loss):** Schedule Job_51 first
+  >> Schedule: Job_51 | p=58.0, r=221.0
+  >> Start at: 2445.0 | Complete at: 2503.0
+  >> Machine Time Updated to: 2503.0
+
+[2503.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_21', 'Job_28', 'Job_32', 'Job_35', 'Job_41', 'Job_48', 'Job_49', 'Job_54', 'Job_55', 'Job_56', 'Job_59', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_74', 'Job_76', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_92']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_59, Beta=Job_88) ---
+  If scheduling Job_59 first: Loss (τ_Job_88) = 58.0
+  If scheduling Job_88 first: Loss (τ_Job_59) = 58.0
+  **Decision (Min Loss):** Schedule Job_59 first
+  >> Schedule: Job_59 | p=58.0, r=268.0
+  >> Start at: 2503.0 | Complete at: 2561.0
+  >> Machine Time Updated to: 2561.0
+
+[2561.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_21', 'Job_28', 'Job_32', 'Job_35', 'Job_41', 'Job_48', 'Job_49', 'Job_54', 'Job_55', 'Job_56', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_74', 'Job_76', 'Job_82', 'Job_83', 'Job_87', 'Job_88', 'Job_90', 'Job_92']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_88, Beta=Job_28) ---
+  If scheduling Job_88 first: Loss (τ_Job_28) = 58.0
+  If scheduling Job_28 first: Loss (τ_Job_88) = 59.0
+  **Decision (Min Loss):** Schedule Job_88 first
+  >> Schedule: Job_88 | p=58.0, r=401.0
+  >> Start at: 2561.0 | Complete at: 2619.0
+  >> Machine Time Updated to: 2619.0
+
+[2619.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_21', 'Job_28', 'Job_32', 'Job_35', 'Job_41', 'Job_48', 'Job_49', 'Job_54', 'Job_55', 'Job_56', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_74', 'Job_76', 'Job_82', 'Job_83', 'Job_87', 'Job_90', 'Job_92']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_28, Beta=Job_49) ---
+  If scheduling Job_28 first: Loss (τ_Job_49) = 59.0
+  If scheduling Job_49 first: Loss (τ_Job_28) = 59.0
+  **Decision (Min Loss):** Schedule Job_28 first
+  >> Schedule: Job_28 | p=59.0, r=138.0
+  >> Start at: 2619.0 | Complete at: 2678.0
+  >> Machine Time Updated to: 2678.0
+
+[2678.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_21', 'Job_32', 'Job_35', 'Job_41', 'Job_48', 'Job_49', 'Job_54', 'Job_55', 'Job_56', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_74', 'Job_76', 'Job_82', 'Job_83', 'Job_87', 'Job_90', 'Job_92']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_49, Beta=Job_69) ---
+  If scheduling Job_49 first: Loss (τ_Job_69) = 59.0
+  If scheduling Job_69 first: Loss (τ_Job_49) = 59.0
+  **Decision (Min Loss):** Schedule Job_49 first
+  >> Schedule: Job_49 | p=59.0, r=218.0
+  >> Start at: 2678.0 | Complete at: 2737.0
+  >> Machine Time Updated to: 2737.0
+
+[2737.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_21', 'Job_32', 'Job_35', 'Job_41', 'Job_48', 'Job_54', 'Job_55', 'Job_56', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_69', 'Job_71', 'Job_72', 'Job_74', 'Job_76', 'Job_82', 'Job_83', 'Job_87', 'Job_90', 'Job_92']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_69, Beta=Job_71) ---
+  If scheduling Job_69 first: Loss (τ_Job_71) = 59.0
+  If scheduling Job_71 first: Loss (τ_Job_69) = 59.0
+  **Decision (Min Loss):** Schedule Job_69 first
+  >> Schedule: Job_69 | p=59.0, r=331.0
+  >> Start at: 2737.0 | Complete at: 2796.0
+  >> Machine Time Updated to: 2796.0
+
+[2796.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_21', 'Job_32', 'Job_35', 'Job_41', 'Job_48', 'Job_54', 'Job_55', 'Job_56', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_71', 'Job_72', 'Job_74', 'Job_76', 'Job_82', 'Job_83', 'Job_87', 'Job_90', 'Job_92']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_71, Beta=Job_82) ---
+  If scheduling Job_71 first: Loss (τ_Job_82) = 59.0
+  If scheduling Job_82 first: Loss (τ_Job_71) = 59.0
+  **Decision (Min Loss):** Schedule Job_71 first
+  >> Schedule: Job_71 | p=59.0, r=343.0
+  >> Start at: 2796.0 | Complete at: 2855.0
+  >> Machine Time Updated to: 2855.0
+
+[2855.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_21', 'Job_32', 'Job_35', 'Job_41', 'Job_48', 'Job_54', 'Job_55', 'Job_56', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_72', 'Job_74', 'Job_76', 'Job_82', 'Job_83', 'Job_87', 'Job_90', 'Job_92']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_82, Beta=Job_90) ---
+  If scheduling Job_82 first: Loss (τ_Job_90) = 59.0
+  If scheduling Job_90 first: Loss (τ_Job_82) = 63.0
+  **Decision (Min Loss):** Schedule Job_82 first
+  >> Schedule: Job_82 | p=59.0, r=378.0
+  >> Start at: 2855.0 | Complete at: 2914.0
+  >> Machine Time Updated to: 2914.0
+
+[2914.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_21', 'Job_32', 'Job_35', 'Job_41', 'Job_48', 'Job_54', 'Job_55', 'Job_56', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_72', 'Job_74', 'Job_76', 'Job_83', 'Job_87', 'Job_90', 'Job_92']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_90, Beta=Job_10) ---
+  If scheduling Job_90 first: Loss (τ_Job_10) = 63.0
+  If scheduling Job_10 first: Loss (τ_Job_90) = 64.0
+  **Decision (Min Loss):** Schedule Job_90 first
+  >> Schedule: Job_90 | p=63.0, r=415.0
+  >> Start at: 2914.0 | Complete at: 2977.0
+  >> Machine Time Updated to: 2977.0
+
+[2977.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_10', 'Job_21', 'Job_32', 'Job_35', 'Job_41', 'Job_48', 'Job_54', 'Job_55', 'Job_56', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_72', 'Job_74', 'Job_76', 'Job_83', 'Job_87', 'Job_92']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_10, Beta=Job_54) ---
+  If scheduling Job_10 first: Loss (τ_Job_54) = 64.0
+  If scheduling Job_54 first: Loss (τ_Job_10) = 65.0
+  **Decision (Min Loss):** Schedule Job_10 first
+  >> Schedule: Job_10 | p=64.0, r=50.0
+  >> Start at: 2977.0 | Complete at: 3041.0
+  >> Machine Time Updated to: 3041.0
+
+[3041.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_21', 'Job_32', 'Job_35', 'Job_41', 'Job_48', 'Job_54', 'Job_55', 'Job_56', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_72', 'Job_74', 'Job_76', 'Job_83', 'Job_87', 'Job_92']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_54, Beta=Job_3) ---
+  If scheduling Job_54 first: Loss (τ_Job_3) = 65.0
+  If scheduling Job_3 first: Loss (τ_Job_54) = 66.0
+  **Decision (Min Loss):** Schedule Job_54 first
+  >> Schedule: Job_54 | p=65.0, r=245.0
+  >> Start at: 3041.0 | Complete at: 3106.0
+  >> Machine Time Updated to: 3106.0
+
+[3106.0]: Multiple ready jobs: ['Job_3', 'Job_4', 'Job_7', 'Job_8', 'Job_21', 'Job_32', 'Job_35', 'Job_41', 'Job_48', 'Job_55', 'Job_56', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_72', 'Job_74', 'Job_76', 'Job_83', 'Job_87', 'Job_92']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_3, Beta=Job_41) ---
+  If scheduling Job_3 first: Loss (τ_Job_41) = 66.0
+  If scheduling Job_41 first: Loss (τ_Job_3) = 68.0
+  **Decision (Min Loss):** Schedule Job_3 first
+  >> Schedule: Job_3 | p=66.0, r=2.0
+  >> Start at: 3106.0 | Complete at: 3172.0
+  >> Machine Time Updated to: 3172.0
+
+[3172.0]: Multiple ready jobs: ['Job_4', 'Job_7', 'Job_8', 'Job_21', 'Job_32', 'Job_35', 'Job_41', 'Job_48', 'Job_55', 'Job_56', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_72', 'Job_74', 'Job_76', 'Job_83', 'Job_87', 'Job_92']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_41, Beta=Job_8) ---
+  If scheduling Job_41 first: Loss (τ_Job_8) = 68.0
+  If scheduling Job_8 first: Loss (τ_Job_41) = 69.0
+  **Decision (Min Loss):** Schedule Job_41 first
+  >> Schedule: Job_41 | p=68.0, r=185.0
+  >> Start at: 3172.0 | Complete at: 3240.0
+  >> Machine Time Updated to: 3240.0
+
+[3240.0]: Multiple ready jobs: ['Job_4', 'Job_7', 'Job_8', 'Job_21', 'Job_32', 'Job_35', 'Job_48', 'Job_55', 'Job_56', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_72', 'Job_74', 'Job_76', 'Job_83', 'Job_87', 'Job_92']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_8, Beta=Job_65) ---
+  If scheduling Job_8 first: Loss (τ_Job_65) = 69.0
+  If scheduling Job_65 first: Loss (τ_Job_8) = 70.0
+  **Decision (Min Loss):** Schedule Job_8 first
+  >> Schedule: Job_8 | p=69.0, r=30.0
+  >> Start at: 3240.0 | Complete at: 3309.0
+  >> Machine Time Updated to: 3309.0
+
+[3309.0]: Multiple ready jobs: ['Job_4', 'Job_7', 'Job_21', 'Job_32', 'Job_35', 'Job_48', 'Job_55', 'Job_56', 'Job_60', 'Job_65', 'Job_66', 'Job_68', 'Job_72', 'Job_74', 'Job_76', 'Job_83', 'Job_87', 'Job_92']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_65, Beta=Job_35) ---
+  If scheduling Job_65 first: Loss (τ_Job_35) = 70.0
+  If scheduling Job_35 first: Loss (τ_Job_65) = 71.0
+  **Decision (Min Loss):** Schedule Job_65 first
+  >> Schedule: Job_65 | p=70.0, r=300.0
+  >> Start at: 3309.0 | Complete at: 3379.0
+  >> Machine Time Updated to: 3379.0
+
+[3379.0]: Multiple ready jobs: ['Job_4', 'Job_7', 'Job_21', 'Job_32', 'Job_35', 'Job_48', 'Job_55', 'Job_56', 'Job_60', 'Job_66', 'Job_68', 'Job_72', 'Job_74', 'Job_76', 'Job_83', 'Job_87', 'Job_92']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_35, Beta=Job_76) ---
+  If scheduling Job_35 first: Loss (τ_Job_76) = 71.0
+  If scheduling Job_76 first: Loss (τ_Job_35) = 71.0
+  **Decision (Min Loss):** Schedule Job_35 first
+  >> Schedule: Job_35 | p=71.0, r=162.0
+  >> Start at: 3379.0 | Complete at: 3450.0
+  >> Machine Time Updated to: 3450.0
+
+[3450.0]: Multiple ready jobs: ['Job_4', 'Job_7', 'Job_21', 'Job_32', 'Job_48', 'Job_55', 'Job_56', 'Job_60', 'Job_66', 'Job_68', 'Job_72', 'Job_74', 'Job_76', 'Job_83', 'Job_87', 'Job_92']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_76, Beta=Job_56) ---
+  If scheduling Job_76 first: Loss (τ_Job_56) = 71.0
+  If scheduling Job_56 first: Loss (τ_Job_76) = 73.0
+  **Decision (Min Loss):** Schedule Job_76 first
+  >> Schedule: Job_76 | p=71.0, r=361.0
+  >> Start at: 3450.0 | Complete at: 3521.0
+  >> Machine Time Updated to: 3521.0
+
+[3521.0]: Multiple ready jobs: ['Job_4', 'Job_7', 'Job_21', 'Job_32', 'Job_48', 'Job_55', 'Job_56', 'Job_60', 'Job_66', 'Job_68', 'Job_72', 'Job_74', 'Job_83', 'Job_87', 'Job_92']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_56, Beta=Job_87) ---
+  If scheduling Job_56 first: Loss (τ_Job_87) = 73.0
+  If scheduling Job_87 first: Loss (τ_Job_56) = 73.0
+  **Decision (Min Loss):** Schedule Job_56 first
+  >> Schedule: Job_56 | p=73.0, r=252.0
+  >> Start at: 3521.0 | Complete at: 3594.0
+  >> Machine Time Updated to: 3594.0
+
+[3594.0]: Multiple ready jobs: ['Job_4', 'Job_7', 'Job_21', 'Job_32', 'Job_48', 'Job_55', 'Job_60', 'Job_66', 'Job_68', 'Job_72', 'Job_74', 'Job_83', 'Job_87', 'Job_92']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_87, Beta=Job_60) ---
+  If scheduling Job_87 first: Loss (τ_Job_60) = 73.0
+  If scheduling Job_60 first: Loss (τ_Job_87) = 74.0
+  **Decision (Min Loss):** Schedule Job_87 first
+  >> Schedule: Job_87 | p=73.0, r=394.0
+  >> Start at: 3594.0 | Complete at: 3667.0
+  >> Machine Time Updated to: 3667.0
+
+[3667.0]: Multiple ready jobs: ['Job_4', 'Job_7', 'Job_21', 'Job_32', 'Job_48', 'Job_55', 'Job_60', 'Job_66', 'Job_68', 'Job_72', 'Job_74', 'Job_83', 'Job_92']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_60, Beta=Job_92) ---
+  If scheduling Job_60 first: Loss (τ_Job_92) = 74.0
+  If scheduling Job_92 first: Loss (τ_Job_60) = 74.0
+  **Decision (Min Loss):** Schedule Job_60 first
+  >> Schedule: Job_60 | p=74.0, r=269.0
+  >> Start at: 3667.0 | Complete at: 3741.0
+  >> Machine Time Updated to: 3741.0
+
+[3741.0]: Multiple ready jobs: ['Job_4', 'Job_7', 'Job_21', 'Job_32', 'Job_48', 'Job_55', 'Job_66', 'Job_68', 'Job_72', 'Job_74', 'Job_83', 'Job_92']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_92, Beta=Job_68) ---
+  If scheduling Job_92 first: Loss (τ_Job_68) = 74.0
+  If scheduling Job_68 first: Loss (τ_Job_92) = 75.0
+  **Decision (Min Loss):** Schedule Job_92 first
+  >> Schedule: Job_92 | p=74.0, r=425.0
+  >> Start at: 3741.0 | Complete at: 3815.0
+  >> Machine Time Updated to: 3815.0
+
+[3815.0]: Multiple ready jobs: ['Job_4', 'Job_7', 'Job_21', 'Job_32', 'Job_48', 'Job_55', 'Job_66', 'Job_68', 'Job_72', 'Job_74', 'Job_83']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_68, Beta=Job_48) ---
+  If scheduling Job_68 first: Loss (τ_Job_48) = 75.0
+  If scheduling Job_48 first: Loss (τ_Job_68) = 76.0
+  **Decision (Min Loss):** Schedule Job_68 first
+  >> Schedule: Job_68 | p=75.0, r=320.0
+  >> Start at: 3815.0 | Complete at: 3890.0
+  >> Machine Time Updated to: 3890.0
+
+[3890.0]: Multiple ready jobs: ['Job_4', 'Job_7', 'Job_21', 'Job_32', 'Job_48', 'Job_55', 'Job_66', 'Job_72', 'Job_74', 'Job_83']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_48, Beta=Job_55) ---
+  If scheduling Job_48 first: Loss (τ_Job_55) = 76.0
+  If scheduling Job_55 first: Loss (τ_Job_48) = 76.0
+  **Decision (Min Loss):** Schedule Job_48 first
+  >> Schedule: Job_48 | p=76.0, r=204.0
+  >> Start at: 3890.0 | Complete at: 3966.0
+  >> Machine Time Updated to: 3966.0
+
+[3966.0]: Multiple ready jobs: ['Job_4', 'Job_7', 'Job_21', 'Job_32', 'Job_55', 'Job_66', 'Job_72', 'Job_74', 'Job_83']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_55, Beta=Job_66) ---
+  If scheduling Job_55 first: Loss (τ_Job_66) = 76.0
+  If scheduling Job_66 first: Loss (τ_Job_55) = 84.0
+  **Decision (Min Loss):** Schedule Job_55 first
+  >> Schedule: Job_55 | p=76.0, r=246.0
+  >> Start at: 3966.0 | Complete at: 4042.0
+  >> Machine Time Updated to: 4042.0
+
+[4042.0]: Multiple ready jobs: ['Job_4', 'Job_7', 'Job_21', 'Job_32', 'Job_66', 'Job_72', 'Job_74', 'Job_83']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_66, Beta=Job_21) ---
+  If scheduling Job_66 first: Loss (τ_Job_21) = 84.0
+  If scheduling Job_21 first: Loss (τ_Job_66) = 87.0
+  **Decision (Min Loss):** Schedule Job_66 first
+  >> Schedule: Job_66 | p=84.0, r=302.0
+  >> Start at: 4042.0 | Complete at: 4126.0
+  >> Machine Time Updated to: 4126.0
+
+[4126.0]: Multiple ready jobs: ['Job_4', 'Job_7', 'Job_21', 'Job_32', 'Job_72', 'Job_74', 'Job_83']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_21, Beta=Job_83) ---
+  If scheduling Job_21 first: Loss (τ_Job_83) = 87.0
+  If scheduling Job_83 first: Loss (τ_Job_21) = 87.0
+  **Decision (Min Loss):** Schedule Job_21 first
+  >> Schedule: Job_21 | p=87.0, r=97.0
+  >> Start at: 4126.0 | Complete at: 4213.0
+  >> Machine Time Updated to: 4213.0
+
+[4213.0]: Multiple ready jobs: ['Job_4', 'Job_7', 'Job_32', 'Job_72', 'Job_74', 'Job_83']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_83, Beta=Job_4) ---
+  If scheduling Job_83 first: Loss (τ_Job_4) = 87.0
+  If scheduling Job_4 first: Loss (τ_Job_83) = 88.0
+  **Decision (Min Loss):** Schedule Job_83 first
+  >> Schedule: Job_83 | p=87.0, r=383.0
+  >> Start at: 4213.0 | Complete at: 4300.0
+  >> Machine Time Updated to: 4300.0
+
+[4300.0]: Multiple ready jobs: ['Job_4', 'Job_7', 'Job_32', 'Job_72', 'Job_74']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_4, Beta=Job_72) ---
+  If scheduling Job_4 first: Loss (τ_Job_72) = 88.0
+  If scheduling Job_72 first: Loss (τ_Job_4) = 88.0
+  **Decision (Min Loss):** Schedule Job_4 first
+  >> Schedule: Job_4 | p=88.0, r=4.0
+  >> Start at: 4300.0 | Complete at: 4388.0
+  >> Machine Time Updated to: 4388.0
+
+[4388.0]: Multiple ready jobs: ['Job_7', 'Job_32', 'Job_72', 'Job_74']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_72, Beta=Job_7) ---
+  If scheduling Job_72 first: Loss (τ_Job_7) = 88.0
+  If scheduling Job_7 first: Loss (τ_Job_72) = 89.0
+  **Decision (Min Loss):** Schedule Job_72 first
+  >> Schedule: Job_72 | p=88.0, r=344.0
+  >> Start at: 4388.0 | Complete at: 4476.0
+  >> Machine Time Updated to: 4476.0
+
+[4476.0]: Multiple ready jobs: ['Job_7', 'Job_32', 'Job_74']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_7, Beta=Job_74) ---
+  If scheduling Job_7 first: Loss (τ_Job_74) = 89.0
+  If scheduling Job_74 first: Loss (τ_Job_7) = 89.0
+  **Decision (Min Loss):** Schedule Job_7 first
+  >> Schedule: Job_7 | p=89.0, r=24.0
+  >> Start at: 4476.0 | Complete at: 4565.0
+  >> Machine Time Updated to: 4565.0
+
+[4565.0]: Multiple ready jobs: ['Job_32', 'Job_74']. Comparing metrics....
+  --- APRTF Metric Comparison (Alpha=Job_74, Beta=Job_32) ---
+  If scheduling Job_74 first: Loss (τ_Job_32) = 89.0
+  If scheduling Job_32 first: Loss (τ_Job_74) = 96.0
+  **Decision (Min Loss):** Schedule Job_74 first
+  >> Schedule: Job_74 | p=89.0, r=356.0
+  >> Start at: 4565.0 | Complete at: 4654.0
+  >> Machine Time Updated to: 4654.0
+
+[4654.0]: Only one ready job: Selecting Job_32
+  >> Schedule: Job_32 | p=96.0, r=153.0
+  >> Start at: 4654.0 | Complete at: 4750.0
+  >> Machine Time Updated to: 4750.0
+
+============================================================
+--- Scheduling Results Summary ---
+============================================================
+  Job_1 | Start: 0 | Complete: 62.0 | Flow Time: 62.0
+  Job_9 | Start: 62.0 | Complete: 100.0 | Flow Time: 68.0
+  Job_14 | Start: 100.0 | Complete: 102.0 | Flow Time: 29.0
+  Job_15 | Start: 102.0 | Complete: 109.0 | Flow Time: 34.0
+  Job_24 | Start: 109.0 | Complete: 123.0 | Flow Time: 20.0
+  Job_20 | Start: 123.0 | Complete: 138.0 | Flow Time: 53.0
+  Job_27 | Start: 138.0 | Complete: 159.0 | Flow Time: 28.0
+  Job_17 | Start: 159.0 | Complete: 184.0 | Flow Time: 104.0
+  Job_38 | Start: 184.0 | Complete: 185.0 | Flow Time: 11.0
+  Job_39 | Start: 185.0 | Complete: 202.0 | Flow Time: 27.0
+  Job_45 | Start: 202.0 | Complete: 215.0 | Flow Time: 20.0
+  Job_36 | Start: 215.0 | Complete: 234.0 | Flow Time: 63.0
+  Job_50 | Start: 234.0 | Complete: 240.0 | Flow Time: 21.0
+  Job_34 | Start: 240.0 | Complete: 264.0 | Flow Time: 102.0
+  Job_19 | Start: 264.0 | Complete: 291.0 | Flow Time: 208.0
+  Job_57 | Start: 291.0 | Complete: 320.0 | Flow Time: 60.0
+  Job_64 | Start: 320.0 | Complete: 340.0 | Flow Time: 42.0
+  Job_63 | Start: 340.0 | Complete: 362.0 | Flow Time: 69.0
+  Job_75 | Start: 362.0 | Complete: 363.0 | Flow Time: 2.0
+  Job_46 | Start: 363.0 | Complete: 395.0 | Flow Time: 199.0
+  Job_80 | Start: 395.0 | Complete: 396.0 | Flow Time: 28.0
+  Job_85 | Start: 396.0 | Complete: 426.0 | Flow Time: 36.0
+  Job_93 | Start: 426.0 | Complete: 458.0 | Flow Time: 33.0
+  Job_96 | Start: 458.0 | Complete: 471.0 | Flow Time: 40.0
+  Job_53 | Start: 471.0 | Complete: 504.0 | Flow Time: 270.0
+  Job_70 | Start: 504.0 | Complete: 538.0 | Flow Time: 200.0
+  Job_29 | Start: 538.0 | Complete: 573.0 | Flow Time: 434.0
+  Job_31 | Start: 573.0 | Complete: 608.0 | Flow Time: 460.0
+  Job_16 | Start: 608.0 | Complete: 644.0 | Flow Time: 569.0
+  Job_25 | Start: 644.0 | Complete: 680.0 | Flow Time: 556.0
+  Job_84 | Start: 680.0 | Complete: 717.0 | Flow Time: 333.0
+  Job_86 | Start: 717.0 | Complete: 754.0 | Flow Time: 362.0
+  Job_89 | Start: 754.0 | Complete: 791.0 | Flow Time: 385.0
+  Job_11 | Start: 791.0 | Complete: 829.0 | Flow Time: 763.0
+  Job_12 | Start: 829.0 | Complete: 867.0 | Flow Time: 799.0
+  Job_47 | Start: 867.0 | Complete: 905.0 | Flow Time: 703.0
+  Job_61 | Start: 905.0 | Complete: 943.0 | Flow Time: 673.0
+  Job_52 | Start: 943.0 | Complete: 983.0 | Flow Time: 762.0
+  Job_95 | Start: 983.0 | Complete: 1023.0 | Flow Time: 594.0
+  Job_44 | Start: 1023.0 | Complete: 1065.0 | Flow Time: 875.0
+  Job_58 | Start: 1065.0 | Complete: 1107.0 | Flow Time: 843.0
+  Job_94 | Start: 1107.0 | Complete: 1149.0 | Flow Time: 721.0
+  Job_30 | Start: 1149.0 | Complete: 1192.0 | Flow Time: 1046.0
+  Job_78 | Start: 1192.0 | Complete: 1235.0 | Flow Time: 868.0
+  Job_5 | Start: 1235.0 | Complete: 1279.0 | Flow Time: 1261.0
+  Job_6 | Start: 1279.0 | Complete: 1323.0 | Flow Time: 1303.0
+  Job_22 | Start: 1323.0 | Complete: 1367.0 | Flow Time: 1269.0
+  Job_100 | Start: 1367.0 | Complete: 1411.0 | Flow Time: 944.0
+  Job_62 | Start: 1411.0 | Complete: 1456.0 | Flow Time: 1175.0
+  Job_81 | Start: 1456.0 | Complete: 1501.0 | Flow Time: 1129.0
+  Job_2 | Start: 1501.0 | Complete: 1548.0 | Flow Time: 1547.0
+  Job_43 | Start: 1548.0 | Complete: 1595.0 | Flow Time: 1407.0
+  Job_67 | Start: 1595.0 | Complete: 1643.0 | Flow Time: 1335.0
+  Job_73 | Start: 1643.0 | Complete: 1692.0 | Flow Time: 1347.0
+  Job_33 | Start: 1692.0 | Complete: 1742.0 | Flow Time: 1584.0
+  Job_99 | Start: 1742.0 | Complete: 1792.0 | Flow Time: 1330.0
+  Job_23 | Start: 1792.0 | Complete: 1844.0 | Flow Time: 1745.0
+  Job_77 | Start: 1844.0 | Complete: 1896.0 | Flow Time: 1535.0
+  Job_79 | Start: 1896.0 | Complete: 1948.0 | Flow Time: 1581.0
+  Job_91 | Start: 1948.0 | Complete: 2000.0 | Flow Time: 1579.0
+  Job_26 | Start: 2000.0 | Complete: 2053.0 | Flow Time: 1928.0
+  Job_42 | Start: 2053.0 | Complete: 2107.0 | Flow Time: 1922.0
+  Job_37 | Start: 2107.0 | Complete: 2162.0 | Flow Time: 1989.0
+  Job_40 | Start: 2162.0 | Complete: 2217.0 | Flow Time: 2038.0
+  Job_13 | Start: 2217.0 | Complete: 2273.0 | Flow Time: 2202.0
+  Job_97 | Start: 2273.0 | Complete: 2330.0 | Flow Time: 1881.0
+  Job_98 | Start: 2330.0 | Complete: 2387.0 | Flow Time: 1936.0
+  Job_18 | Start: 2387.0 | Complete: 2445.0 | Flow Time: 2362.0
+  Job_51 | Start: 2445.0 | Complete: 2503.0 | Flow Time: 2282.0
+  Job_59 | Start: 2503.0 | Complete: 2561.0 | Flow Time: 2293.0
+  Job_88 | Start: 2561.0 | Complete: 2619.0 | Flow Time: 2218.0
+  Job_28 | Start: 2619.0 | Complete: 2678.0 | Flow Time: 2540.0
+  Job_49 | Start: 2678.0 | Complete: 2737.0 | Flow Time: 2519.0
+  Job_69 | Start: 2737.0 | Complete: 2796.0 | Flow Time: 2465.0
+  Job_71 | Start: 2796.0 | Complete: 2855.0 | Flow Time: 2512.0
+  Job_82 | Start: 2855.0 | Complete: 2914.0 | Flow Time: 2536.0
+  Job_90 | Start: 2914.0 | Complete: 2977.0 | Flow Time: 2562.0
+  Job_10 | Start: 2977.0 | Complete: 3041.0 | Flow Time: 2991.0
+  Job_54 | Start: 3041.0 | Complete: 3106.0 | Flow Time: 2861.0
+  Job_3 | Start: 3106.0 | Complete: 3172.0 | Flow Time: 3170.0
+  Job_41 | Start: 3172.0 | Complete: 3240.0 | Flow Time: 3055.0
+  Job_8 | Start: 3240.0 | Complete: 3309.0 | Flow Time: 3279.0
+  Job_65 | Start: 3309.0 | Complete: 3379.0 | Flow Time: 3079.0
+  Job_35 | Start: 3379.0 | Complete: 3450.0 | Flow Time: 3288.0
+  Job_76 | Start: 3450.0 | Complete: 3521.0 | Flow Time: 3160.0
+  Job_56 | Start: 3521.0 | Complete: 3594.0 | Flow Time: 3342.0
+  Job_87 | Start: 3594.0 | Complete: 3667.0 | Flow Time: 3273.0
+  Job_60 | Start: 3667.0 | Complete: 3741.0 | Flow Time: 3472.0
+  Job_92 | Start: 3741.0 | Complete: 3815.0 | Flow Time: 3390.0
+  Job_68 | Start: 3815.0 | Complete: 3890.0 | Flow Time: 3570.0
+  Job_48 | Start: 3890.0 | Complete: 3966.0 | Flow Time: 3762.0
+  Job_55 | Start: 3966.0 | Complete: 4042.0 | Flow Time: 3796.0
+  Job_66 | Start: 4042.0 | Complete: 4126.0 | Flow Time: 3824.0
+  Job_21 | Start: 4126.0 | Complete: 4213.0 | Flow Time: 4116.0
+  Job_83 | Start: 4213.0 | Complete: 4300.0 | Flow Time: 3917.0
+  Job_4 | Start: 4300.0 | Complete: 4388.0 | Flow Time: 4384.0
+  Job_72 | Start: 4388.0 | Complete: 4476.0 | Flow Time: 4132.0
+  Job_7 | Start: 4476.0 | Complete: 4565.0 | Flow Time: 4541.0
+  Job_74 | Start: 4565.0 | Complete: 4654.0 | Flow Time: 4298.0
+  Job_32 | Start: 4654.0 | Complete: 4750.0 | Flow Time: 4597.0
+----------------------------------
+Total Completion Time (C_max): 4750.0
+Average Flow Time: 1571.28
+----------------------------------
