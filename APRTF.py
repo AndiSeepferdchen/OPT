@@ -7,6 +7,8 @@ class Job:
         self.r = r
         self.completion_time = 0
         self.start_time = 0
+        self.prtf_val = 0
+        self.tmp_prtf = 0
 #%%
 #Scheduling function: job1=Alpha, job2=Beta, delta=Current Time t, 
 #calculate Completion Time, Delay tau, Idle Time D1/D2
@@ -53,7 +55,6 @@ def get_project_jobs(processing_times, release_dates):
     for i in range(num_jobs):
         p = processing_times[i]
         r = release_dates[i]
-
         jobs.append(Job(id=f"Job_{i+1}", p=p, r=r))
 
     return jobs
@@ -102,7 +103,7 @@ def APRTF(all_jobs, start_delta=0):
                 job_beta = sorted_by_p[1] # Job2 identified by SPT (the second smallest p_time)
 
                 # compare j1 & j2 parameters
-                metrics_alpha_first = calculate_sequence_metrics(job_alpha, job_beta, current_time)
+                metrics_alpha_first = calculate_sequence_metrics(job_alpha, job_beta, current_time)     
                 metrics_beta_first = calculate_sequence_metrics(job_beta, job_alpha, current_time)
 
                 tau_alpha = metrics_alpha_first["tau"]
@@ -157,4 +158,106 @@ def APRTF(all_jobs, start_delta=0):
     print(f"Average Flow Time: {total_flow_time / len(scheduled_jobs):.2f}") #2 digit number
     print("----------------------------------")
 
+    return scheduled_jobs
+
+
+def R(i, delta):
+    return max(delta, i.r)
+
+def E(i, delta):
+    return R(i, delta) + i.p
+
+def prtf(i, delta):
+        return 2 * R(i, delta) + i.p
+
+
+def update_prtf_values(jobs, delta):
+    for job in jobs:
+        job.tmp_prtf = prtf(job, delta)
+    return jobs
+
+
+def PRTF_Andi(all_jobs):   
+    remaining_jobs = all_jobs
+    delta = 0
+    sum_of_completion_times = 0
+    scheduled_jobs = []
+
+    while len(remaining_jobs) != 1:
+        update_prtf_values(all_jobs, delta)
+
+        alpha = min(
+            enumerate(remaining_jobs),
+            key=lambda x: (x[1].tmp_prtf, x[1].r, x[0]))[1]
+        beta = min(remaining_jobs, key=lambda x: (x.r, x.p))
+        if alpha.r <= R(beta, delta):
+            sum_of_completion_times += alpha.tmp_prtf
+            print(f"  >> Schedule: {alpha.id} | p={alpha.p}, r={alpha.r}")
+            start_time = R(beta, delta)
+            complete_time = E(beta, delta)
+            alpha.start_time = start_time
+            alpha.completion_time = complete_time
+            print(f"  >> Start at: {start_time} | Complete at: {complete_time}")
+            delta = E(alpha, delta)
+            print(f"  >> Machine Time Updated to: {delta}")
+            remaining_jobs.remove(alpha)
+            scheduled_jobs.append(alpha)
+        else:
+            mu = len(remaining_jobs) - 2
+            tau = min((job for job in remaining_jobs if job not in (alpha, beta)), key=lambda x: x.r).r
+        
+            if R(beta, delta) - R(alpha, delta) < mu * min( R(alpha, delta) - R(beta, delta), E(beta, E(alpha, delta)) - tau):
+                sum_of_completion_times += beta.tmp_prtf
+                print(f"  >> Schedule: {beta.id} | p={beta.p}, r={beta.r}")
+                start_time = R(beta, delta)
+                complete_time = E(beta, delta)
+                beta.start_time = start_time
+                beta.completion_time = complete_time
+                print(f"  >> Start at: {start_time} | Complete at: {complete_time}")
+                delta = E(beta, delta)
+                print(f"  >> Machine Time Updated to: {delta}")
+                remaining_jobs.remove(beta)
+                scheduled_jobs.append(beta)
+            else:
+                sum_of_completion_times += alpha.tmp_prtf
+                print(f"  >> Schedule: {alpha.id} | p={alpha.p}, r={alpha.r}")
+                start_time = R(beta, delta)
+                complete_time = E(beta, delta)
+                alpha.start_time = start_time
+                alpha.completion_time = complete_time
+                print(f"  >> Start at: {start_time} | Complete at: {complete_time}")
+                delta = E(alpha, delta)
+                print(f"  >> Machine Time Updated to: {delta}")
+                remaining_jobs.remove(alpha)
+                scheduled_jobs.append(alpha)
+
+    sum_of_completion_times += remaining_jobs[0].tmp_prtf
+    start_time = R(remaining_jobs[0], delta)
+    complete_time = E(remaining_jobs[0], delta)
+    remaining_jobs[0].start_time = start_time
+    remaining_jobs[0].completion_time = complete_time
+    print(f"  >> Schedule: {remaining_jobs[0].id} | p={remaining_jobs[0].p}, r={remaining_jobs[0].r}")
+    print(f"  >> Start at: {R(remaining_jobs[0], delta)} | Complete at: {E(remaining_jobs[0], delta)}")
+    delta = E(remaining_jobs[0], delta)
+    print(f"  >> Machine Time Updated to: {delta}")
+    scheduled_jobs.append(remaining_jobs[0])
+    remaining_jobs.remove(remaining_jobs[0])
+
+    # Final result
+    print("\n" + "=" * 60)
+    print("--- Scheduling Results Summary ---")
+    print("=" * 60)
+    C_max = 0
+    total_flow_time = 0 # Flow Time = C - r
+    for job in scheduled_jobs:
+        flow_time = job.completion_time - job.r
+
+        total_flow_time += flow_time
+        C_max = max(C_max, job.completion_time)
+        print(f"  {job.id} | Start: {job.start_time} | Complete: {job.completion_time} | Flow Time: {flow_time}")
+
+    print("----------------------------------")
+    print(f"Total Completion Time (C_max): {C_max}")
+    print(f"Average Flow Time: {total_flow_time / len(scheduled_jobs):.2f}") #2 digit number
+    print("----------------------------------")
     return scheduled_jobs
