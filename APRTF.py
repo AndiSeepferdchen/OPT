@@ -1,15 +1,3 @@
-#%%
-#Job Data Structure
-class Job:
-    def __init__(self, id, p, r):
-        self.id = id #job name like Alpha, Beta
-        self.p = p
-        self.r = r
-        self.completion_time = 0
-        self.start_time = 0
-        self.prtf_val = 0
-        self.tmp_prtf = 0
-#%%
 #Scheduling function: job1=Alpha, job2=Beta, delta=Current Time t, 
 #calculate Completion Time, Delay tau, Idle Time D1/D2
 def calculate_sequence_metrics(job1, job2, delta):
@@ -46,18 +34,7 @@ def calculate_sequence_metrics(job1, job2, delta):
         "S1": S1,
         "S2": S2
     }
-#%%
-# Data Loading
-def get_project_jobs(processing_times, release_dates):
 
-    jobs = []
-    num_jobs = len(processing_times)
-    for i in range(num_jobs):
-        p = processing_times[i]
-        r = release_dates[i]
-        jobs.append(Job(id=f"Job_{i+1}", p=p, r=r))
-
-    return jobs
 #%%
 # APRTF
 def get_release_date(job_object):
