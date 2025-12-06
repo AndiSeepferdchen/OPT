@@ -1,4 +1,4 @@
-#Scheduling function: job1=Alpha, job2=Beta, delta=Current Time t, 
+#Scheduling function: job1=Alpha, job2=Beta, delta=Current Time t,
 #calculate Completion Time, Delay tau, Idle Time D1/D2
 def calculate_sequence_metrics(job1, job2, delta):
     # Job1 S =max(currnt t, released date_j1)
@@ -61,7 +61,7 @@ def APRTF(all_jobs, start_delta=0):
             #if no ready jobs, skip to Release Date of next sorted job
             current_time = remaining_jobs[0].r
             print(f"\n[{current_time}]:**IDLE**. Advancing time to R={current_time} to wait for {remaining_jobs[0].id}")
-            ready_jobs = [job for job in remaining_jobs if job.r <= current_time] # load ready jobs at the new current time 
+            ready_jobs = [job for job in remaining_jobs if job.r <= current_time] # load ready jobs at the new current time
 
         # APRTF Decision
         best_job_to_schedule = None
@@ -80,7 +80,7 @@ def APRTF(all_jobs, start_delta=0):
                 job_beta = sorted_by_p[1] # Job2 identified by SPT (the second smallest p_time)
 
                 # compare j1 & j2 parameters
-                metrics_alpha_first = calculate_sequence_metrics(job_alpha, job_beta, current_time)     
+                metrics_alpha_first = calculate_sequence_metrics(job_alpha, job_beta, current_time)
                 metrics_beta_first = calculate_sequence_metrics(job_beta, job_alpha, current_time)
 
                 tau_alpha = metrics_alpha_first["tau"]
@@ -243,4 +243,4 @@ def PRTF_Andi(all_jobs):
     print(f"Average Flow Time: {total_flow_time / len(scheduled_jobs):.2f}")
     print("----------------------------------")
 
-    return scheduled_jobs
+    return total_flow_time
