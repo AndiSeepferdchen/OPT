@@ -1,0 +1,5 @@
+,Algorithms,Number of Nodes Considered,Number of Nodes Generated,Maximal Number of Nodes in the List,Computation Time
+0,BB_C,1093,1828,1065,1.845
+1,BB_C-H,2866,3652,2781,0.640
+2,BB_C-D,5031,5031,4953,8.076
+3,BB_C-A,6855,6855,6720,1.669
